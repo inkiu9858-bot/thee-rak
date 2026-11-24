@@ -40,7 +40,19 @@ html, body, .stApp, .stApp * { font-family: 'Mali','Itim','Leelawadee UI','Sarab
     linear-gradient(180deg,#120c36 0%,#1d1452 55%,#2d1b66 100%);
 }
 header[data-testid="stHeader"], footer, #MainMenu, [data-testid="stToolbar"] { display:none !important; }
-.block-container { max-width: 720px; padding-top: 1.1rem; padding-bottom: 3rem; }
+
+/* บังคับสีเอง ไม่พึ่ง .streamlit/config.toml (กันตัวหนังสือจางเมื่อเบราว์เซอร์/คลาวด์ใช้ธีมสว่าง) */
+.stApp { color:#fff4e0; color-scheme:dark; }
+.stApp label, .stApp label p, .stApp [data-testid="stWidgetLabel"] p,
+.stApp [data-testid="stRadio"] label p, .stApp [data-testid="stRadio"] label div,
+.stApp [data-testid="stCaptionContainer"], .stApp [data-testid="stCaptionContainer"] p { color:#fff4e0 !important; }
+.stApp [data-testid="stRadio"] label div[data-baseweb="radio"] > div:first-child {
+  background-color:#ffffff !important; border-color:#ffd166 !important; }
+.stApp [data-testid="stRadio"] label div[data-baseweb="radio"] > div:first-child > div { background-color:#ff9f45 !important; }
+.stApp [data-testid="stRadio"] label[data-checked="true"] div[data-baseweb="radio"] > div:first-child { background-color:#ff9f45 !important; border-color:#ff9f45 !important; }
+.stApp [data-testid="stRadio"] label[data-checked="true"] div[data-baseweb="radio"] > div:first-child > div { background-color:#ffffff !important; }
+.stApp input, .stApp textarea { color:#2b1b4d !important; background:#fff8ea !important; -webkit-text-fill-color:#2b1b4d; }
+.stApp input::placeholder, .stApp textarea::placeholder { color:#8a7aa8 !important; -webkit-text-fill-color:#8a7aa8; }.block-container { max-width: 720px; padding-top: 1.1rem; padding-bottom: 3rem; }
 iframe { border: 0 !important; border-radius: 22px; }
 
 .stButton > button {
