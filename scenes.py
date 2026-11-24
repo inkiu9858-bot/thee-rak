@@ -25,7 +25,7 @@ BASES = {  # (สีฐาน, สีขอบ/ด้านข้าง, สี�
     "cream": ("#ffefc4", "#f0c887", "#ffdc8f"),
 }
 BASE_LABELS = {"leaf": "ใบตอง 🌿", "pink": "ชมพู 🌸", "lilac": "ม่วงพาสเทล 💜", "cream": "ครีม 🍞"}
-FLOWER_LABELS = {"lotus": "ดอกบัว 🪷", "daisy": "เดซี่ 🌼", "rose": "กุหลาบ 🌹"}
+FLOWER_LABELS = {"lotus": "ดอกบัว 🌸", "daisy": "เดซี่ 🌼", "rose": "กุหลาบ 🌹"}
 CANDLES = {"pink": "#ff9ec7", "yellow": "#ffd166", "blue": "#8ecbff"}
 CANDLE_LABELS = {"pink": "เทียนชมพู", "yellow": "เทียนเหลือง", "blue": "เทียนฟ้า"}
 STICKERS = {"heart": "💖", "star": "⭐", "moon": "🌙", "cat": "🐱", "none": ""}
